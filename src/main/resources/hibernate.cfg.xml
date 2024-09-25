@@ -1,0 +1,15 @@
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/printOffice</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">123</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <mapping class="entities.Address"/>
+        <mapping class="entities.Contracts"/>
+        <mapping class="entities.Orders"/>
+        <mapping class="entities.Workshops"/>
+        <mapping class="entities.Products"/>
+    </session-factory>
+</hibernate-configuration>
